@@ -3,7 +3,6 @@ pipeline {
 
   stages {
     stage('Hello') {
-      echo "ANSIBLE_GROUP ${params.ANSIBLE_GROUP}"
       steps {
         echo "ANSIBLE_GROUP ${params.ANSIBLE_GROUP}"
         sh '''
